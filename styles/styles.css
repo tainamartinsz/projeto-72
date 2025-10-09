@@ -1,0 +1,188 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  flex-wrap: wrap; /* permite reorganizar no celular */
+}
+
+/* ----------- SEÇÃO INFORMAÇÕES ----------- */
+#div-info {
+  flex: 1;
+  padding: 8vh 5vw;
+  padding-top: 25vh;
+  background-image:
+    linear-gradient(to left, rgba(46, 94, 197, 0), rgb(4, 32, 58)),
+    url(../assets/financas.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  min-width: 300px;
+}
+
+#div-info h2 {
+  margin-bottom: -4vh;
+  padding-left: 0.5vw;
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+#div-info h1 {
+  font-size: 5vw; /* proporcional à largura da tela */
+  margin-bottom: 1vh;
+}
+
+#div-info p {
+  padding: 0 2vw 0 0.5vw;
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+/* ----------- SEÇÃO CALCULADORA ----------- */
+#div-calculadora {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 55vw;
+  background-color: #eef5fa;
+  padding-top: 5vh;
+  min-width: 320px;
+}
+
+/* ----------- CAMPOS INPUT ----------- */
+input {
+  padding-left: 10px;
+  width: 35vw;
+  height: 10vh;
+  border-radius: 10px;
+  border: none;
+}
+
+#inpTaxa:focus {
+  outline: none;
+}
+
+/* ----------- BOTÕES ----------- */
+#div-calculadora button {
+  border: none;
+  background: linear-gradient(#dfe6f1, #ffffff);
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: #193e61;
+  font-size: 1rem;
+  width: 14vw;
+  height: 7vh;
+  margin-top: 1vh;
+  margin-right: 1vw;
+  transition: 0.3s ease;
+}
+
+#div-calculadora button:hover {
+  transform: scale(1.05);
+}
+
+/* ----------- CAIXA CALCULADORA ----------- */
+#forma-calculadora {
+  text-align: center;
+  position: relative;
+  padding-top: 7vh;
+  margin-bottom: 2vh;
+  background: linear-gradient(#0f3c65, #215280, #0f3c65);
+  width: 40vw;
+  height: 38vh;
+  border-radius: 20px;
+  min-width: 300px;
+  border: none;
+}
+
+#inpTaxa {
+  margin-top: -1vh;
+  background-color: #ffffff;
+  color: #0a253f;
+  font-size: 1rem;
+}
+
+#inpTaxa::placeholder {
+  font-size: 1rem;
+  color: #0932588c;
+}
+
+
+#inpResult {
+  width: 39vw;
+  height: 10.9vh;
+  margin-top: 4.8vh;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #0a253f;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#inpResult:focus {
+  outline: none;
+}
+
+#inpResult::placeholder {
+  font-size: 0.9rem;
+  padding-left: 1vw;
+  color: #09325898;
+  text-transform: capitalize;
+}
+
+/* ----------- IMAGEM DECORATIVA ----------- */
+img {
+  position: absolute;
+  right: 5vw;
+  bottom: 10vh;
+  width: 13vw;
+  max-width: 200px;
+}
+
+/* ----------- RESPONSIVIDADE ----------- */
+@media (max-width: 900px) {
+  body {
+    flex-direction: column;
+  }
+
+  #div-calculadora {
+    width: 100%;
+    height: auto;
+    padding: 5vh 0;
+    position: relative;
+  }
+
+  #forma-calculadora {
+    width: 85vw;
+  }
+
+  input {
+    width: 80vw;
+  }
+
+  #div-calculadora button {
+    width: 50vw;
+  }
+
+  #inpResult {
+    width: 83vw;
+  }
+
+  #div-info {
+    padding-top: 10vh;
+  }
+}
+
+#moeda {
+  top: 15vh; 
+  right: 22vw;
+  width: 12vw;
+  z-index: 10;
+}

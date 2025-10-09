@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Regra do 72</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <div id="div-info">
+        <h2>Descubra o Tempo do seu Investimento!</h2>
+        <h1>REGRA DO <i>72</i></h1>
+        <p>A <i>Regra do 72</i> foi registrada em 1494 pelo matemático italiano 
+            Luca Pacioli, no livro Summa de Arithmetica. Criada para 
+            simplificar cálculos de juros compostos, ela permite 
+            estimar rapidamente em <b>quantos anos um investimento dobrará de valor</b>,
+            dividindo 72 pela taxa de juros anual.</p>
+    </div>
+    <div id="div-calculadora">
+        <div id="forma-calculadora">
+        <p></p>
+        <label for="taxa"></label>
+        <input type="text" name="taxa" id="inpTaxa" placeholder="Insira a taxa de juros anual" required>
+        <p></p>
+        <button id="btnCalculo">Calcular</button>
+        <button id="BtnLimpar">Limpar</button>
+        <input type="text" name="result" id="inpResult" placeholder="Exibir resultado">
+        </div>
+    </div>
+    <img src="./assets/moeda.png" id="moeda">
+    <script src="./src/script.js"></script>
+</body>
+</html>

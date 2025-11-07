@@ -164,7 +164,7 @@ img {
   }
 
   input {
-    width: 80vw;
+    width: 70vw;
   }
 
   #div-calculadora button {
@@ -181,8 +181,11 @@ img {
 }
 
 #moeda {
-  top: 15vh; 
+  top: 19vh; 
   right: 22vw;
   width: 12vw;
   z-index: 10;
 }
+  #inpResult {
+    padding: 8px;
+  }
